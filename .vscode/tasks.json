@@ -2,19 +2,19 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "compilar",
-            "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+            "label": "compilar",                    // Nombre de la tarea
+            "command": "C:\\msys64\\ucrt64\\bin\\g++.exe", // Ruta del compilador
             "args": [
                 "-Iinclude",                         // Incluye la carpeta con headers
-                "src/main.cpp",
+                "src/main.cpp",                      // Aqui van todos los archivos cpp que quieres compilar
                 "src/TemplateClass.cpp",
                 "-o",
-                "build/main.exe",                    // Puedes usar main.out si prefieres
+                "build/main.exe",                    // Esta es la ruta donde se creara el archivo .exe
                 "-g",                                // Incluye información de depuración
                 "-fdiagnostics-color=always"   // Colorea los mensajes de error
             ],
             "options": {
-                "cwd": "${workspaceFolder}"
+                "cwd": "${workspaceFolder}"        // Folder en el cual esta configurado tu proyecto, es ideal dejarlo como aqui
             },
             "problemMatcher": [
                 "$gcc"
