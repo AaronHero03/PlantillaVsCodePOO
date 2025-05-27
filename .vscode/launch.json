@@ -5,14 +5,14 @@
       "name": "Depurar main.exe",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}\\build\\main.exe",
+      "program": "${workspaceFolder}\\build\\main.exe", //Ruta donde se encuentra el .exe
       "args": [],
       "stopAtEntry": false,
-      "cwd": "${workspaceFolder}",
+      "cwd": "${workspaceFolder}", // Ruta del proyecto
       "environment": [],
       "externalConsole": false,
       "MIMode": "gdb",
-      "miDebuggerPath": "C:\\msys64\\ucrt64\\bin\\gdb.exe",
+      "miDebuggerPath": "C:\\msys64\\ucrt64\\bin\\gdb.exe", // Ruta del archivo que se encarga de realizar los debugs
       "setupCommands": [
         {
           "description": "Habilitar impresión bonita de variables",
@@ -20,7 +20,7 @@
           "ignoreFailures": true
         }
       ],
-      "preLaunchTask": "compilar"
+      "preLaunchTask": "compilar" // Debe tener el mismo nombre que el que pusiste en tasks.json
     }
   ]
 }
